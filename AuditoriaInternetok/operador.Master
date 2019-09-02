@@ -1,0 +1,60 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="operador.master.cs" Inherits="AuditoriaInternetok.operador" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <header>
+          <div class="container-fluid">
+              <div class="row">
+                  <div class="col-md-6">
+                      <img src="imagens/logo.png" alt="Logomarca" class="img-responsive" style="top: 0px; margin-left:40px;"/><h4 style="margin-left:20px;">Auditoria Oi Internet</h4>
+          </div>
+                  <div class="col-md-4">
+                      <span style="position:absolute;font-size:16px;font-family:Arial;color:#000; top: 40px;"><strong>Seja Bem Vindo(a):</strong> <asp:Label ID="txtuser" runat="server" Text=""></asp:Label></span>
+                </div>
+                  <div class="col-md-2">
+                      <a href="sair.aspx"><i class="glyphicon glyphicon-off" style="color:#c12e2a; top: 40px; font-size: 16px; left: -20px;"><strong>Sair</strong></i></a>
+                </div>
+              </div>
+              </div>
+           <br/>
+          <!--   menu    -->
+          <nav class="navbar navbar-inverse">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-controls="navbar">
+            <span class="sr-only"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+            <a class="navbar-brand" href="#"><i class="glyphicon glyphicon-home"></i></a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+              <li><a href="principal.aspx">Home</a></li>
+            <li><a href="CadastrarAuditoria.aspx">Cadastrar Auditoria</a></li>
+            <li><a href="AlterarSenha.aspx">Alterar Senha</a></li>
+            
+          </ul>
+        </div>
+    </nav>
+           
+      </header>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+        <script src="Scripts/jquery-1.10.2.js"></script>
+        <script src="Scripts/bootstrap.min.js"></script>
+    </form>
+</body>
+</html>
